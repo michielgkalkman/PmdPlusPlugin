@@ -10,4 +10,6 @@ to use [PmdPlus](https://github.com/michielgkalkman/PmdPlus) without having to m
 
 # Usage #
 
+In any maven project, run:
+
     mvn org.taHjaj.wo:PmdPlusPlugin:dup
