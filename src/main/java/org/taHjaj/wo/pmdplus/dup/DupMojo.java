@@ -36,10 +36,8 @@ public class DupMojo extends AbstractMojo {
 
         getLog().info("Executing with maven project " + mavenProject + " for session " + mavenSession);
 
-        // Find the license plugin (it's project's responsibility to make sure the License plugin is properly setup in
-        // its <pluginManagement>, for most XWiki projects it just mean inherits from xwiki-commons-pom)
-        Plugin plugin = plugin( "org.apache.maven.plugins","maven-pmd-plugin", "3.13.0", dependencies(
-                dependency( "org.taHjaj.wo", "PmdPlus", "0.0.3-SNAPSHOT")
+        Plugin plugin = plugin( "org.apache.maven.plugins","maven-pmd-plugin", "3.14.0", dependencies(
+                dependency( "org.taHjaj.wo", "PmdPlus", "0.0.4-SNAPSHOT")
         ));
 
         if (plugin == null) {
